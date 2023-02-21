@@ -1,7 +1,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #FFC900;
+    /* background: #FFC900; */
 }
 
 .texto-primary{
@@ -15,4 +15,45 @@ body{
 }
 
 
+.a{
+    background-color: red;
+}
+.a.css{
+    vertical-align: sub;
+}
 
+
+.h1{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    padding: 200px;
+    margin: 50px;
+}
+
+.a{
+    display: block;
+    background: red;
+    color: #000;
+    
+    /* ignora  */
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    /* no ignora  */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* vertical-align: sub; */
+}
+
+nav {
+    background: #f4f4f4;
+    margin: 50px;
+}
+
+ul li a{
+    margin:0 20px;
+}
