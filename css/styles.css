@@ -1,59 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    /* background: #FFC900; */
+
+/* *,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root{
+    --yellow: #F2CD5C;
+    --font:'Roboto', sans-serif;
 }
 
-.texto-primary{
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font);
+    /* background: var(--yellow); */
+    
+}
+
+
+a{
+    text-decoration: none;
     color: #000;
 }
 
 .link{
-    text-decoration: none;
-    font-weight: bold;
-    color: #000
+    text-decoration: underline;
+    color: red;
 }
 
-
-.a{
-    background-color: red;
-}
-.a.css{
-    vertical-align: sub;
-}
-
-
-.h1{
+.section{
     background: #000;
     color: #fff;
-    width: 100%;
-    height: 200px;
-    padding: 200px;
-    margin: 50px;
+    margin: 20px;
 }
 
-.a{
-    display: block;
-    background: red;
-    color: #000;
-    
-    /* ignora  */
-    width: 300px;
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-    /* no ignora  */
-    margin-left: 10px;
-    margin-right: 10px;
-    /* vertical-align: sub; */
+ul.list-check {
+    list-style: none;
 }
-
-nav {
-    background: #f4f4f4;
-    margin: 50px;
+ul.list-check li {
+    font-size: 16px;
+    margin: 5px 0;
 }
-
-ul li a{
-    margin:0 20px;
+ul.list-check li::before {
+    content: "😜";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
 }
