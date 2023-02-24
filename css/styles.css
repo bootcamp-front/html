@@ -19,7 +19,7 @@ html{
 
 body{
     font-family: var(--font);
-    /* background: var(--yellow); */
+    background: var(--yellow);
     
 }
 
@@ -100,5 +100,42 @@ ul.list-check li::before {
     
     }
 }
+
+
+
+.table{
+    margin: 20px;
+    width: 90%;
+} 
+
+.table  thead  th, .table  tbody  tr td  {
+    border: 1px solid green ;
+    border-collapse: collapse;
+}
+.tabla  thead  th, .tabla  tbody  tr td  {
+    border: 1px solid red ;
+    border-collapse: collapse;
+}
+
+ .th, .td{
+    padding: 10px;
+    text-align: center;
+}
+ 
+table{
+    margin: 20px;
+    width: 90%;
+} 
+
+table, td,th{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+ th, td{
+    padding: 5px;
+    text-align: center;
+}
+ 
 
 
