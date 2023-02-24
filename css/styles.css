@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
-/* *,*::before,*::after{
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+
 
 :root{
     --yellow: #F2CD5C;
@@ -20,6 +21,11 @@ body{
     font-family: var(--font);
     /* background: var(--yellow); */
     
+}
+
+
+img,video{
+    max-width: 100%;
 }
 
 
@@ -54,3 +60,45 @@ ul.list-check li::before {
     width: 1.5em;
     margin-left: -1em;
 }
+
+
+.hero{
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.hero-caption{
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    padding: 2% 5%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+    .hero-caption{
+        width: 100%;
+        top: 50%;
+        text-align: center;
+    }
+}
+@media (max-width: 525.98px) {
+    .hero-caption{
+        width: 100%;
+        top: 70%;
+        text-align: center;
+
+    }
+    .myImg{
+        background-image: url(../img/bg-t.jpg) !important;
+    
+    }
+}
+
+

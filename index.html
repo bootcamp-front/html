@@ -6,35 +6,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Link | list | attr</title>
+        <title>Imagen | attr</title>
     </head>
 
     <body>
-        <!-- <h1>Enlaces | listas | Atributos</h1>
-        <a href="nosotros.html" class="link">Nosotros</a>
-        <a href="https://www.google.com" target="_blank" download="false" class="">Goolge</a>
-        <a href="blog/blog.html" class="">Blog</a> -->
 
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-            <li>item 5</li>
-        </ol>
+        <img class="myImg" src="img/bg-d.jpg" alt="">
 
-        <ul type="circle" class="list-check">
-            <li>item 1</li>
-            <li>item 2</li>
-        </ul>
+        <div class="hero">
 
-        <dl>
-            <dt>HTML</dt>
-            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quo?</dd>
-            <dt>HTML</dt>
-            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quo?</dd>
-        </dl>
+            <picture>
+                <source srcset="img/bg-m.jpg" media="(max-width:524px)">
+                <source srcset="img/bg-t.jpg" media="(max-width:1024px)">
+                <img src="img/bg-d.jpg" alt="">
+            </picture>
+
+            <div class="hero-caption">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore perspiciatis laboriosam, rem voluptatem voluptas praesentium adipisci laborum delectus nobis tempore.</p>
+            </div>
+        </div>
 
     </body>
 
