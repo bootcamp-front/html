@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+    --yellow: #F2CD5C;
+    --yellow-50: #fff8e2;
+    --green-50: #fff8e2;
+    --red-50: #fff8e2;
+    --purple: #5a2fda;
+    --purple-100: #d5dfff;
+    --white:#fff;
+    --black: #000;
+    --font:'Roboto', sans-serif;
+}
 
 *,*::before,*::after{
     margin: 0;
@@ -8,10 +19,6 @@
 }
 
 
-:root{
-    --yellow: #F2CD5C;
-    --font:'Roboto', sans-serif;
-}
 
 html{
     scroll-behavior: smooth;
@@ -19,169 +26,58 @@ html{
 
 body{
     font-family: var(--font);
-    background: var(--yellow);
-    
+    background: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-img,video{
-    max-width: 100%;
+.navbar{
+    width: 100%;
+    background: var(--purple-100);
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
 }
 
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-.link{
-    text-decoration: underline;
-    color: red;
-}
-
-.section{
-    background: #000;
-    color: #fff;
-    margin: 20px;
-}
-
-ul.list-check {
-    list-style: none;
-}
-ul.list-check li {
-    font-size: 16px;
-    margin: 5px 0;
-}
-ul.list-check li::before {
-    content: "😜";
-    color: red;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5em;
-    margin-left: -1em;
-}
-
-
-.hero{
-    position: relative;
-}
-
-.hero img {
+.nav-logo{
     width: 100%;
     height: auto;
 }
-
-
-
-.hero-caption{
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    padding: 2% 5%;
-    transform: translateY(-50%);
+.nav-logo img{
+    width: 100px;
+    height: auto;
 }
 
-@media (max-width: 991.98px) {
-    .hero-caption{
-        width: 100%;
-        top: 50%;
-        text-align: center;
-    }
-}
-@media (max-width: 525.98px) {
-    .hero-caption{
-        width: 100%;
-        top: 70%;
-        text-align: center;
-
-    }
-    .myImg{
-        background-image: url(../img/bg-t.jpg) !important;
-    
-    }
-}
-
-
-
-.table{
-    margin: 20px;
-    width: 90%;
-} 
-
-.table  thead  th, .table  tbody  tr td  {
-    border: 1px solid green ;
-    border-collapse: collapse;
-}
-.tabla  thead  th, .tabla  tbody  tr td  {
-    border: 1px solid red ;
-    border-collapse: collapse;
-}
-
- .th, .td{
-    padding: 10px;
-    text-align: center;
-}
- 
-table{
-    margin: 20px;
-    width: 90%;
-} 
-
-table, td,th{
-    border: 1px solid #000;
-    border-collapse: collapse;
-}
-
- th, td{
-    padding: 5px;
-    text-align: center;
-}
- 
-.formulario{
-    margin: 50px;
-    padding: 20px;
-    border-radius: 4px;
-    background: #f1f1f1;
-}
-.form-group{
-    display: block;
+.nav-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    margin: 20px 0;
+}
+.nav-item{
+    display: inline;
+    margin: 0  5px;
 }
 
-label{
-    display: block;
+.nav-link{
+    text-decoration: none;
+    color: #5a2fda;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: var(--black);
+    transition: .5s ease;
+}
+
+.footer{
     width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-input[type="text"]{
-    outline: none;
-    appearance: none;
-    border: 1px solid #000;
-    width: 100%;
-    height: 28px;
-    border-radius: 4px;
-    padding: 0 5px;
-}
-.input{
-    outline: none;
-    appearance: none;
-    border: 1px solid #000;
-    width: 100%;
-    height: 28px;
-    border-radius: 4px;
-    padding: 0 5px;
-}
-
-
-.btn {
-    outline: none;
-    display: inline-block;
-    padding: 6px 12px;
-    background: #000;
-    color: #fff;
-    border-radius: 4px;
+    background: var(--purple);
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 12px;
+    margin-top: auto;
 }
